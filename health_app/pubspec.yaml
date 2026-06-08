@@ -1,0 +1,54 @@
+name: health_app
+description: SensiaHealth — Smart student health companion
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  flutter_riverpod: ^2.4.9
+
+  # Navigation
+  go_router: ^13.2.0
+
+  # Fonts
+  google_fonts: ^6.2.1
+
+  # Charts
+  fl_chart: ^0.66.2
+
+  # Animations
+  flutter_animate: ^4.5.0
+
+  # HTTP & Storage
+  dio: ^5.4.3
+  flutter_secure_storage: ^9.0.0
+  shared_preferences: ^2.2.3
+
+  # UI Components
+  percent_indicator: ^4.2.3
+
+  # Utils
+  intl: ^0.19.0
+  uuid: ^4.4.0
+
+  # Health / Wearable integration (HealthKit on iOS, Health Connect on Android)
+  health: ^12.2.0
+  permission_handler: ^11.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/animations/.gitkeep
+    - assets/images/.gitkeep
+    - assets/data/disease_kb.json
